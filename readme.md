@@ -1,1 +1,1 @@
-Exercicio Logica de programação
+Exercicio de logica-Novos Titãs
