@@ -9,7 +9,9 @@
 </head>
 <body>
     <h1>Exercicio 1</h1>
-    <form action="/exercicio1" method="post"></form>
+    <form action="/exercicio1/index.php" method="post"> 
+    
+    
     <div>
         <label for="value1">Digite o primeiro valor</label>
         <input type="number" name="value1">
@@ -21,6 +23,28 @@
 
     </div>
     <input type="submit" value="Enviar">
-    
+    </form>
+    <?php
+   //validar variaveis 
+   //var_dump($_POST);
+    //if (key_exists('value1',$_POST) ){
+    if (isset($_POST["value2"])){
+
+        $value1 = $_POST['value1'];
+        $value2 = $_POST['value2'];
+
+        $total=$value1+$value2;
+
+        if ($total>20){
+            $total=$total+8;
+        }
+        else{
+            $total=$total-5;
+        }
+        echo "<div class='result'>O resultado foi: $total</div>";
+
+    }
+
+    ?>
 </body>
 </html>
