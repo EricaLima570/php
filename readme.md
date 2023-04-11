@@ -1,16 +1,25 @@
-#Exercicio de logica-Novos Titãs
+# Exercicio de logica-Novos Titãs
 
-#como rodar 
+# COMO RODAR
 
-###Requisitos
-.Php 8 ou superior
+### passo a passo 
+1.instale o Docker na sua máquina local:https://www.docker.com/
 
-###Passo a Passo
+2.Criar um arquivo `docker-compose.yml` no diretório raiz do projeto PHP.
 
-.Acesse a pasta do processo
+3.No arquivo docker-compose.yml, inclua :
 
-.Rode o comando no terminal: Docker compose up
+`version: '3.9'`
+`services:`
+  `php-apache:`
+    `image: php:8.2.4-apache-buster`
+   ` ports:`
+      `- 8181:80`
+   ` volumes:`
+     ` - ./:/var/www/html`
+     
+P.S: Certifeque-se de estar usando a identação certa nesse comando.
 
-.Acesse no seu navegador a url: localhost:8181
-
-.No índice escolha o exercicio que deseja testar
+4.dentro do diretorio raiz abra o terminal e execute o comando `docker compose up`
+5.Finalmente, entre no seu navegador e digite : 
+`http://localhost:8181`
