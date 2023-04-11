@@ -5,7 +5,7 @@
 ### passo a passo 
 1.instale o Docker na sua máquina local:https://www.docker.com/
 
-2.Criar um arquivo `docker-compose.yml` no diretório raiz do projeto PHP.
+2.Criar um arquivo `docker-compose.yml` no diretório raiz do projeto .
 
 3.No arquivo docker-compose.yml, inclua :
 
@@ -18,7 +18,7 @@
             volumes: 
              - ./:/var/www/html
 
-P.S: Certifeque-se de estar usando a identação certa nesse comando.
+P.S: Certifique-se de estar usando a identação certa nesse comando.
 
 4.dentro do diretorio raiz abra o terminal e execute o comando `docker compose up`
 
