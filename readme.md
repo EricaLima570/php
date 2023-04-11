@@ -9,17 +9,18 @@
 
 3.No arquivo docker-compose.yml, inclua :
 
-`version: '3.9'`
-`services:`
-  `php-apache:`
-    `image: php:8.2.4-apache-buster`
-   ` ports:`
-      `- 8181:80`
-   ` volumes:`
-     ` - ./:/var/www/html`
-     
+    version: '3.9'
+    services:
+        php-apache:
+            image: php:8.2.4-apache-buster
+            ports:
+                - 8181:80
+            volumes: 
+             - ./:/var/www/html
+
 P.S: Certifeque-se de estar usando a identação certa nesse comando.
 
 4.dentro do diretorio raiz abra o terminal e execute o comando `docker compose up`
+
 5.Finalmente, entre no seu navegador e digite : 
 `http://localhost:8181`
