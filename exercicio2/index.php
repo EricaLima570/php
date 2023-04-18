@@ -9,11 +9,11 @@
 </head>
 <body>
     <h1>Exercicio 2</h1>
-    <form action="/exercicio2" method="post"></form>
+    <form action="/exercicio2/index.php" method="post">
     <div>
         <label for="value1">Digite um número</label>
         <input type="number" name="value1">
     </div>
-    <input type="submit" value="Enviar">  
+        <input type="submit" value="Enviar">   
 </body>
 </html>
