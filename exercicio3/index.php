@@ -11,16 +11,20 @@
     <h1>Exercicio 3</h1>
     <form action="/exercicio3" method="post">
     <div>
-        <label for="name">Digite o seu primeiro Nome:</label>
+        <label for="name">Digite o seu Nome:</label>
         <input type="text" name="name">
     </div>
     <div>
         <label for="age">Digite a sua idade:</label>
-        <input type="number" name="age">
+        <input type="number" min="0"  onkeypress="return event.charCode >= 48" min="1" name="age">
     </div>
     <div>
         <label for="sex">Digite seu sexo:</label>
-        <input type="text" name="sex">
+        <select name="sex" id="">
+            <option>feminino</option>
+            <option>masculino</option>
+        </select>
+        
     </div>
     <input type="submit" value="Enviar">
     </form>
