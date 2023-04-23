@@ -25,9 +25,7 @@
     <input type="submit" value="Enviar">
     </form>
     <?php
-   //validar variaveis 
-   //var_dump($_POST);
-    //if (key_exists('value1',$_POST) ){
+    
     if (isset($_POST["value2"])){
 
         $value1 = $_POST['value1'];
