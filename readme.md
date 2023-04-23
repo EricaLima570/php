@@ -7,7 +7,7 @@
 
 2.Criar um arquivo `docker-compose.yml` no diretório raiz do projeto .
 
-4.dentro do diretorio raiz abra o terminal e execute o comando `docker compose up`
+3.dentro do diretorio raiz abra o terminal e execute o comando `docker compose up`
 
-5.Finalmente, entre no seu navegador e digite : 
+4.Finalmente, entre no seu navegador e digite : 
 `http://localhost:8181`
