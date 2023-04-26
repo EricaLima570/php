@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 478ac5f (Resolvendo conflito com o readme)
 # Exercicio de logica-Novos Titãs
 
 # COMO RODAR
@@ -13,5 +16,5 @@
 4.Finalmente, entre no seu navegador e digite : 
 `http://localhost:8181`
 
-5.Finalmente, entre no seu navegador e digite : http://localhost:8181
 
+5.Finalmente, entre no seu navegador e digite : http://localhost:8181
