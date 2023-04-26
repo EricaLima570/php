@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Exercicio de logica-Novos Titãs
 
 # COMO RODAR
@@ -9,3 +10,6 @@
 
 3.Finalmente, entre no seu navegador e digite : 
 `http://localhost:8181`
+
+5.Finalmente, entre no seu navegador e digite : http://localhost:8181
+
