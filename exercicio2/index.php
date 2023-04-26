@@ -13,12 +13,8 @@
     <div>
         <label for="value1">Digite um número</label>
         <input type="number" name="value1">
-
     </div>
-
-
     </div>
-    <input type="submit" value="Enviar">
-    
+    <input type="submit" value="Enviar">  
 </body>
 </html>
