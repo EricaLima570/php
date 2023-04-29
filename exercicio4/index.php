@@ -25,5 +25,24 @@
         </div>
         <input type="submit" value="Enviar">       
     </form>
+    <?php
+    if (isset( $_POST["value1"])){
+        $value1 = $_POST['value1'];
+        $value2 = $_POST['value2'];
+        $value3 = $_POST['value3'];
+
+        $values = [$value1, $value2, $value3];
+
+        // ordena os números em ordem decrescente
+        rsort($values);
+
+        // imprime os números em ordem decrescente
+        echo "<h2> Valores em ordem decrescente:</h2>";
+        
+        foreach ($values as $value) {
+            echo "<p class='result'>".$value."<p>";
+        }
+    }
+    ?>
 </body>
 </html>
