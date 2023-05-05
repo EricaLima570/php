@@ -25,5 +25,27 @@
         </div>
         <input type="submit" value="Enviar">       
     </form>
+    <?php
+    if(isset($_POST['value1']) && isset($_POST['value2']) && isset($_GET['value3'])) {
+        $num1 = $_POST['value1'];
+        $num2 = $_POST['value2'];
+        $num3 = $_POST['value3'];
+      
+	    if (($value1 + $value2 > $value3) && ($value1 + $value3 > $value2) && ($value2 + $value3 > $value1)) {
+            if (($value1 == $value2) && ($value2 == $value3)) {
+                echo  '<p>Triângulo equilátero</p>';
+            } 
+            else if (($num1 != $num2) && ($num1 != $num3) && ($num2 != $num3)) {
+                echo '<p>Triângulo escaleno</p>';
+            } 
+            else {
+                echo '<p>Triângulo isosceles</p>';
+            }
+            } 
+            else {
+                echo '<p>Não é um triângulo</p>';
+            }
+    }
+    ?>
 </body>
 </html>
