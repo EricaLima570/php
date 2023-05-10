@@ -47,8 +47,8 @@ class exercicio6Cest
             12 =>'Dezembro',
         );
         //função para percorrer os vaores do array mes
-        foreach ($indicemes as $meses){
-            $I->fillField('meses', '$value1');
+        foreach ($indicemes as $value1){
+            $I->fillField('value1', '$value1');
             $I->click('Enviar');
     }
     }
