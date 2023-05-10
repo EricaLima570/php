@@ -14,10 +14,7 @@
         <label for="value1">Digite um valore entre 1 e 12</label>
         <input type="number" name="value1">
         <input type="submit" value="Enviar">  
-
-
     </div>
-    </form>
-    
+    </form>   
 </body>
 </html>
