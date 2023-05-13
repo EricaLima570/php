@@ -17,4 +17,33 @@
     </div>
     </form>   
 </body>
+<?php
+
+    if (key_exists('num', $_GET)){
+    $num = $_GET['num'];
+    }
+    
+    $indicemes=array(  
+        1 => 'Janeiro',
+        2 => 'Fevereiro',
+        3 => 'Março',
+        4 => 'Abril',
+        5 => 'Maio',
+        6 => 'Junho',
+        7 => 'Julho',
+        8 => 'Agosto',
+        9 => 'Setembro',
+        10 =>'Outubro',
+        11 =>'Novembro',
+        12 =>'Dezembro',
+    );
+
+    if ($value1>= 1 && $value1 <= 12) {
+        echo "<div class='result'>Número $value1 corresponde a um mes valido .</div>";
+    } else {
+        echo "<div class='result'>Não corresponde a um mês válido.</div>";
+    }
+    
+
+?>
 </html>
