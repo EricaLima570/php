@@ -39,9 +39,9 @@
     );
 
     if ($value1>= 1 && $value1 <= 12) {
-        echo "<div class='result'>Número $value1 corresponde a um mes valido .</div>";
+        echo "<div class='result'>Número $value1 corresponde ao mês de $indicemes[$value1] .</div>";
     } else {
-        echo "<div class='result'>Não corresponde a um mês válido.</div>";
+        echo "<div class='result'>$value1 Não corresponde a um mês válido.</div>";
     }
     
 
