@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="" method="post">
-        <h2>Exercicio 3</h2>
+        <h2>Exercicio 4</h2>
         <br>
         <div>
             <label for="value1">Digite o primeiro valor</label>
