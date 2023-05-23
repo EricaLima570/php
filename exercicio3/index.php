@@ -31,14 +31,14 @@
     <?php
     if(isset($_POST["age"]) && isset($_POST["sex"]) && isset($_POST["name"])) {
         $name = $_POST["name"];
-		$sex = $_POST["sex"];
-		$age = $_POST["age"];
+        $sex = $_POST["sex"];
+        $age = $_POST["age"];
         if ($sex== "feminino"  && $age<25 ){
-		    echo "<div class='result'> $name: ACEITA</div>";
-		} 
+            echo "<div class='result'> $name: ACEITA</div>";
+        } 
         else {
-			echo "<div class='result'> $name : NÃO ACEITA</div>";
-		}
+            echo "<div class='result'> $name : NÃO ACEITA</div>";
+        }
     }
     ?>    
 </body>
