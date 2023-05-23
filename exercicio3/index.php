@@ -34,7 +34,7 @@
 		$sex = $_POST["sex"];
 		$age = $_POST["age"];
         if ($sex== "feminino"  && $age<25 ){
-			echo "<div class='result'> $name: ACEITA</div>";
+		    echo "<div class='result'> $name: ACEITA</div>";
 		} 
         else {
 			echo "<div class='result'> $name : NÃO ACEITA</div>";
