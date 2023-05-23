@@ -16,22 +16,22 @@
         </div>
         <input type="submit" value="Enviar">
     </form>
-<?php
-    if (isset($_POST["value1"])){
-		$value1 = $_POST["value1"];
-        if ($value1 % 10 == 0) {
-			echo "<div class='result'>Número divisivel por 10</div>";
-		}
-		if ($value1 % 5 == 0) {
-			echo "<div class='result'>Número divisível por 5</div>";
-		}
-		if ($value1 % 2 == 0) {
-            echo "<div class='result'>Número divisível por 2</div>";
+    <?php
+        if (isset($_POST["value1"])){
+            $value1 = $_POST["value1"];
+            if ($value1 % 10 == 0) {
+                echo "<div class='result'>Número divisivel por 10</div>";
+            }
+            if ($value1 % 5 == 0) {
+                echo "<div class='result'>Número divisível por 5</div>";
+            }
+            if ($value1 % 2 == 0) {
+                echo "<div class='result'>Número divisível por 2</div>";
+            }
+            if($value1%5!=0 && $value1%2!=0 && $value1%10!=0) {
+                echo "<div class='result'>$value1 Não é divisivel por 10,5 ou 2</div>";
+            }
         }
-		if($value1%5!=0 && $value1%2!=0 && $value1%10!=0) {
-            echo "<div class='result'>$value1 Não é divisivel por 10,5 ou 2</div>";
-		}
-    }
-?>    
+    ?>    
 </body>
 </html>
