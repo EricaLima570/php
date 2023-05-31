@@ -23,11 +23,9 @@
         <select name="sex" id="">
             <option>feminino</option>
             <option>masculino</option>
-        </select>
-        
+        </select>       
     </div>
     <input type="submit" value="Enviar">
-    </form>
-    
+    </form>    
 </body>
 </html>
