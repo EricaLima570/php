@@ -4,5 +4,5 @@ services:
     image: php:8.2.4-apache-buster
     ports:
       - 8181:80
-    volumes:
+    volumes: 
       - ./:/var/www/html
