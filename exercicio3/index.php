@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Exercicio 3</h1>
-    <form action="/exercicio3" method="post">
+    <form action="/exercicio3/index.php" method="post">
     <div>
         <label for="name">Digite o seu Nome:</label>
         <input type="text" name="name">
@@ -23,7 +23,7 @@
         <select name="sex" id="">
             <option>feminino</option>
             <option>masculino</option>
-        </select>       
+        </select>        
     </div>
     <input type="submit" value="Enviar">
     </form>    
