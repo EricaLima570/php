@@ -20,21 +20,20 @@
     </div>
     <div>
         <label for="sex">Digite seu sexo:</label>
-        <select name="sex" id="">
-            <option>feminino</option>
-            <option>masculino</option>
-        </select>        
+            <select name="sex" id="">
+                <option>feminino</option>
+                <option>masculino</option>
+            </select>        
     </div>
     <input type="submit" value="Enviar">
     </form>
     <br>   
     <?php
-    if (isset($_POST["age"]) && isset($_POST["sex"]) && isset($_POST["name"])) {
+    if(isset($_POST["age"]) && isset($_POST["sex"]) && isset($_POST["name"])) {
         $name = $_POST["name"];
 		$sex = $_POST["sex"];
 		$age = $_POST["age"];
-
-		if ($sex== "masculino"  && $age<25 ){
+        if ($sex== "feminino"  && $age<25 ){
 			echo "<div class='result'> $name: ACEITA</div>";
 		} 
         else {
