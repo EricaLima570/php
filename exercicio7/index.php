@@ -18,7 +18,7 @@
     </div>
     <div>
         <label for="user">Selecione o usuário</label>
-            <select name="user" id="">
+            <select name="user" id="user">
                 <option>Professor</option>
                 <option>Aluno</option>
             </select>        
