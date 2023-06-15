@@ -1,12 +1,50 @@
-body{
-    background-color:gray;
+form {
+    border: 2px solid #a72222;
+    padding: 30px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    margin:auto;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px;
 }
-div {
-    margin: 30px 0px;
+h2{
+    margin: auto;
+    color: #a72222;
+    text-align: center;
 }
-input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+input[type="number"]{
+    padding: 7px;
+    border: 1px solid goldenrod;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select{
+    color:black;
+    margin-bottom: 20px;
+    flex: content;
+    text-align: center;
+    background-image: rgb(0, 255, 242);
+    border: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    padding: 5px;
+   
+}
+
+input[type="submit"] {
+    background-color: #36c777;
+    padding: 5px 10px;
+    color: black;
+    width: 100px; 
+    cursor: pointer;
+    margin-left: 80px;
+    margin-bottom: 10px;
+  
+
 }
