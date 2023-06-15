@@ -23,6 +23,7 @@ class exercicio7Cest
         $I->selectOption("form select[name=user]","Professor");
         $I->seeInField("#user", 'Professor');
         $I->click("Enviar");
+        $I->see("Professor: Você tem 10 dias para devolver o livro Coraline"); 
     }
     public function alunoexercicio7frontendTest(AcceptanceTester $I)
     { 
@@ -35,5 +36,7 @@ class exercicio7Cest
         $I->selectOption("form select[name=user]","Aluno");
         $I->seeInField("#user", 'Aluno');
         $I->click("Enviar");
+        $I->see("Aluno: Você tem 3 dias para devolver o livro Coraline"); 
+        
     }
 }
