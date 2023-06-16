@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(0, 217, 255);
+}
 form {
     border: 2px solid #a72222;
     padding: 30px;
