@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="" method="post">
-        <h2>Exercicio 3</h2>
+        <h2>Exercicio 5</h2>
         <br>
         <div>
             <label for="value1">lado 1 do triangulo</label>
