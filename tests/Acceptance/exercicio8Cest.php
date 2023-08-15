@@ -4,7 +4,7 @@ namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
 
-class Exercicio8Cest
+class exercicio8Cest
 {
     public function _before(AcceptanceTester $I)
     {
@@ -14,7 +14,7 @@ class Exercicio8Cest
     public function tryToTest(AcceptanceTester $I)
     {
         
-        $I->amOnPage('/Exercicio8');
+        $I->amOnPage('/exercicio8');
 
         $I->fillField('numero', '5');
         $I->click('Enviar');
