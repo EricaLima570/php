@@ -16,7 +16,6 @@ class exercicio6Cest
         //Eu estou na página "exercicio 6"
         $I->amOnPage('/exercicio6');
 
-        //Eu vejo o titulo "Exercicio 2"
         //Eu vejo "Exercicio 6" em h1
         $I->seeInTitle('Exercício 6');
     }
