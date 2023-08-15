@@ -26,7 +26,7 @@
         <input type="submit" value="Enviar">       
     </form>
     <?php
-    if(isset($_POST['value1']) && isset($_POST['value2']) && isset($_GET['value3'])) {
+    if(isset($_POST['value1']) && isset($_POST['value2']) && isset($_POST['value3'])) {
         $num1 = $_POST['value1'];
         $num2 = $_POST['value2'];
         $num3 = $_POST['value3'];
@@ -41,10 +41,10 @@
             else {
                 echo '<p>Triângulo isosceles</p>';
             }
-            } 
-            else {
-                echo '<p>Não é um triângulo</p>';
-            }
+        } 
+        else {
+            echo '<p>Não é um triângulo</p>';
+        }
     }
     ?>
 </body>
