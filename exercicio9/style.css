@@ -1,0 +1,50 @@
+form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: #444;
+}
+
+.sol,.valido {
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: rgb(19, 20, 20);
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin: 5px;
+}
+    
+h2 {
+    font-size: 22px;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+    
+input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+  
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #ff9900;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+}
