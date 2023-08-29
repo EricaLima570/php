@@ -11,7 +11,7 @@ class exercicio6Cest
     }
 
     // tests
-    public function TitleExercicio6Test(AcceptanceTester $I)
+    public function TitlExercicio6Test(AcceptanceTester $I)
     {
         //Eu estou na página "exercicio 6"
         $I->amOnPage('/exercicio6');
@@ -28,26 +28,30 @@ class exercicio6Cest
          * mês com este número
          */
         $I->amOnPage('/exercicio6');
-
-        //criando array associativo em php para os meses:
-         $indicemes=array(  
-            1 => 'Janeiro',
-            2 => 'Fevereiro',
-            3 => 'Março',
-            4 => 'Abril',
-            5 => 'Maio',
-            6 => 'Junho',
-            7 => 'Julho',
-            8 => 'Agosto',
-            9 => 'Setembro',
-            10 =>'Outubro',
-            11 =>'Novembro',
-            12 =>'Dezembro',
-        );
-        //função para percorrer os vaores do array mes
-        foreach ($indicemes as $value1){
-            $I->fillField('value1', '$value1');
-            $I->click('Enviar');
-    }
+        $I->see("Digite um valore entre 1 e 12");
+        $I->fillField("value1","1");
+        $I->click("Enviar");
+        $I->fillField("value1","2");
+        $I->click("Enviar");
+        $I->fillField("value1","3");
+        $I->click("Enviar");
+        $I->fillField("value1","4");
+        $I->click("Enviar");
+        $I->fillField("value1","5");
+        $I->click("Enviar");
+        $I->fillField("value1","6");
+        $I->click("Enviar");
+        $I->fillField("value1","7");
+        $I->click("Enviar");
+        $I->fillField("value1","8");
+        $I->click("Enviar");
+        $I->fillField("value1","9");
+        $I->click("Enviar");
+        $I->fillField("value1","10");
+        $I->click("Enviar");
+        $I->fillField("value1","11");
+        $I->click("Enviar");
+        $I->fillField("value1","12");
+        $I->click("Enviar");
     }
 }
