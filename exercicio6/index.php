@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Exercício 6</h1>
-    <form action="/exercicio6" method="post">
+    <form action="/exercicio6" method="get">
     <div>
         <label for="value1">Digite um valore entre 1 e 12</label>
         <input type="number" name="value1">
