@@ -10,40 +10,57 @@
 <body>
     <h1>Exercício 6</h1>
     <form action="/exercicio6" method="get">
-    <div>
-        <label for="value1">Digite um valore entre 1 e 12</label>
-        <input type="number" name="value1">
-        <input type="submit" value="Enviar">  
-    </div>
-    </form>   
+        <div>
+            <label for="value1">Digite um valor entre 1 e 12</label>
+            <input type="number" name="value1">
+            <input type="submit" value="Enviar">  
+        </div>
+    </form>
+    <?php
+    if (isset($_GET["value1"])) {
+        $value1 = $_GET['value1'];
+        switch ($value1) {
+            case 1:
+                echo "Janeiro";
+                break;
+            case 2:
+                echo "Fevereiro";
+                break;
+            case 3:
+                echo "Março";
+                break;
+            case 4: 
+                echo "Abril";
+                break;
+            case 5:
+                echo "Maio";
+                break;
+            case 6:
+                echo "Junho";
+                break;
+            case 7:
+                echo "Julho";
+                break;
+            case 8:
+                echo "Agosto";
+                break;
+            case 9:
+                echo "Setembro";
+                break;
+            case 10:
+                echo "Outubro";
+                break;
+            case 11:
+                echo "Novembro";
+                break;
+            case 12:
+                echo "Dezembro";
+                break;
+            default:
+                echo "Não corresponde a um Mês válido";
+                break;
+        }
+    }	
+    ?>
 </body>
-<?php
-
-    if (key_exists('num', $_GET)){
-    $num = $_GET['num'];
-    }
-    
-    $indicemes=array(  
-        1 => 'Janeiro',
-        2 => 'Fevereiro',
-        3 => 'Março',
-        4 => 'Abril',
-        5 => 'Maio',
-        6 => 'Junho',
-        7 => 'Julho',
-        8 => 'Agosto',
-        9 => 'Setembro',
-        10 =>'Outubro',
-        11 =>'Novembro',
-        12 =>'Dezembro',
-    );
-
-    if ($value1>= 1 && $value1 <= 12) {
-        echo "<div class='result'>Número $value1 corresponde ao mês de $indicemes[$value1] .</div>";
-    } else {
-        echo "<div class='result'>$value1 Não corresponde a um mês válido.</div>";
-    }
-    
-
-?>
 </html>
