@@ -10,6 +10,8 @@
         <li><a href="./exercicio4/" target="_blank">Exercicio 4</a></li>
         <li><a href="./exercicio5/" target="_blank">Exercicio 5</a></li>
         <li><a href="./exercicio6/" target="_blank">Exercicio 6</a></li>
+        <li><a href="./exercicio7/" target="_blank">Exercicio 7</a></li>
+        <li><a href="./exercicio8/" target="_blank">Exercicio 8</a></li>
     </ul>    
 </body>
 </html>
