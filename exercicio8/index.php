@@ -9,25 +9,9 @@
 </head>
 <body>
     <form action="" method="get">
-        <label for="numero"> Digite um número:  </label>
-        <input type="number" id="numero" name="numero">
+        <label for="numero"> Digite um número:</label>
+        <input type="number" name="numero">
         <button type="submit">Enviar</button>
     </form>
-<?php
-
-    if (isset($_GET['numero'])) {
-        $numero = $_GET['numero'];
-        $produto = 1;
-    
-        echo "<h3> De 1 até $numero:</h3>";
-        for ($i = 1; $i <= $numero; $i++) {
-            echo "<li>$i</li>";
-            $produto *= $i;
-        }
-    
-        echo "<h2>Produto: $produto</h2>";
-    }
-       
-?>
 </body>
 </html>
