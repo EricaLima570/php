@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="index.php" method="post">
-        <h2>Quantas vezes você quer imprimir a palavra SOL?</h2>
+        <h2>Quantas vezes você deseja imprimir a palavra SOL?</h2>
         <input type="text" name="countRepeat" id="countRepeat">
         <input type="submit" value="Enviar">
     </form>

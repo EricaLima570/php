@@ -16,7 +16,8 @@ class Exercicio9Cest
     {
     
         $I->amOnPage('/exercicio9');
-        $I->see('Quantas vezes você quer imprimir a palavra SOL?');
+        $I->see('Digite o número de vezes que deseja imprimir a palavra "SOL":');
+        $I->fillField('#quantidade', '5');
         $I->click('Enviar');
         
     }
