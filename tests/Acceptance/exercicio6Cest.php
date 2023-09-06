@@ -11,7 +11,7 @@ class exercicio6Cest
     }
 
     // tests
-    public function TitlExercicio6Test(AcceptanceTester $I)
+    public function TitleExercicio6Test(AcceptanceTester $I)
     {
         //Eu estou na página "exercicio 6"
         $I->amOnPage('/exercicio6');
