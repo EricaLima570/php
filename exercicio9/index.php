@@ -27,9 +27,5 @@
         }
     }
     ?>
-        <h2>Quantas vezes você quer imprimir a palavra SOL?</h2>
-        <input type="text" name="countRepeat" id="countRepeat">
-        <input type="submit" value="Enviar">
-    </form>
 </body>
 </html>
