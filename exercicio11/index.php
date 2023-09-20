@@ -14,5 +14,16 @@
         <input type="number" id="numero" name="numero" required>
         <input type="submit" value="Enviar">
     </form>
+    <?php
+    if (isset($_POST["numero"])) {
+        $numero = $_POST["numero"];
+        echo "<h2>Tabuada de $numero:</h2>";
+        echo "<table border='5'>";
+        for ($i = 1; $i <= 10; $i++) {
+            $resultado = $numero * $i;
+            echo "<tr><td>$numero  x   $i</td><td>=</td><td>$resultado</td></tr>";
+        }
+    }
+    ?>
 </body>
 </html>
