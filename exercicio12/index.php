@@ -14,6 +14,18 @@
         <input type="text" id="palavra" name="palavra">
         <button type="submit">Enviar</button>
     </form>
+    <?php
+    if (isset($_POST["palavra"])) {
+        $palavra = $_POST["palavra"];
+
+        for ($i = 1; $i <= 4; $i++) {
+            for ($j = 0; $j < $i; $j++) {
+                echo $palavra . ' ';
+            }
+            echo "<br>";
+        }
+    }
+    ?>
 </body>
 </html>
 
