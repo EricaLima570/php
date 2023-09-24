@@ -18,5 +18,10 @@ class exercicio12Cest
         $I->amOnPage("/exercicio12");
         $I->fillField("palavra", 'Test');
         $I->click('Enviar');
+
+        $I->see('Test');
+        $I->see('Test Test'); 
+        $I->see('Test Test Test'); 
+        $I->see('Test Test Test Test'); 
     }
 }
