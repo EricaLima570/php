@@ -14,5 +14,20 @@
         <input type="number" name="number" id="number" required>
         <input type="submit" value="Enviar">
     </form>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $count = 0;
+        $number = $_POST["number"];
+        
+        while ($number != 0) {
+            if ($number >= 100 && $number <= 200) {
+                $count++;
+            }
+            $number = $_POST["number"];
+        }
+        
+        echo "<p>Foram digitados $count números entre 100 e 200.</p>";
+    }
+    ?>
 </body>
 </html>
