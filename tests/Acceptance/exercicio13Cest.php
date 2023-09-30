@@ -18,9 +18,12 @@ class exercicio13Cest
        
         $I->fillField('number', '130');
         $I->click('Enviar');
+        $I->see('Foram digitados 1 números entre 100 e 200.');
         
         $I->fillField('number', '57');
         $I->click('Enviar');
+        $I->see('Foram digitados 0 números entre 100 e 200.');
+
   
         $I->fillField('number', '0');
         $I->click('Enviar');
