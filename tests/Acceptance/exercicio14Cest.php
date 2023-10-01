@@ -20,5 +20,6 @@ class exercicio14Cest
         $I->fillField('#alt_juca', '1.10');
 
         $I->click('Calcular');
+        $I->see("Serão necessários 1 anos para que Juca seja maior que Chico.");
     }
 }
