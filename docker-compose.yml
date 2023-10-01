@@ -6,3 +6,16 @@ services:
       - 8181:80
     volumes: 
       - ./:/var/www/html
+  database_titans:
+    image: mariadb:latest 
+    environment:
+        MARIADB_ROOT_PASSWORD: 23l07s2019
+        MARIADB_DATABASE: titans
+        MARIADB_USER: user_erica
+        MARIADB_PASSWORD: ls23072019
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
