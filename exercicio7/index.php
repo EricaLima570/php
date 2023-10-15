@@ -25,5 +25,17 @@
     </div>
     <input type="submit" value="Enviar">
     </form>
+    <?php
+         if(isset($_POST['name']) && isset($_POST['user'])) {
+            $name = $_POST["name"];
+            $user = $_POST["user"];
+            if ($user== "Professor"){
+                echo "<div> $user: Você tem 10 dias para devolver o livro $name</div>";
+            } 
+            else {
+                echo "<div> $user: Você tem 3 dias para devolver o livro $name</div>";
+            }
+         }
+    ?>
     </body>
-</html>    
+</html>
