@@ -14,5 +14,20 @@
         <input type="text" name="massa_inicial" id="massa_inicial" required>
         <input type="submit" value="Enviar">
     </form>
+    <?php
+    if (isset($_POST['massa_inicial'])) {
+        $massa_inicial = floatval($_POST['massa_inicial']);
+        $massa_desejada = 0.10;
+        $taxa_decaimento = 0.25;
+        $tempo = 0;
+
+        while ($massa_inicial > $massa_desejada) {
+            $massa_inicial *= $taxa_decaimento;
+            $tempo += 30;
+        }
+
+        echo "<p>Tempo necessário para a massa ser menor que 0.10: $tempo segundos.</p>";
+    }
+    ?>
 </body>
 </html>

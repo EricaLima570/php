@@ -19,5 +19,6 @@ class exercicio15Cest
           $I->seeElement('form');
           $I->fillField('massa_inicial', '0.5');
           $I->click('Enviar');
+          $I->see('Tempo necessário para a massa ser menor que 0.10: 60 segundos.');//Para a resposta
     }
 }
