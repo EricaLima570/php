@@ -10,7 +10,7 @@
 
 <body>
     <form action="index.php" method="post">
-        <label>Insira 20 números</label>
+        <label>Insira 20 números separando por virgula</label>
         <input type="text" id="value" name="value">
         <input type="submit" value="Enviar">
     </form>
