@@ -35,6 +35,22 @@ class exercicio16Cest
         $I->fillField("input[name='numero15']", 15);
 
         $I->click('Enviar');
+
+        $I->see('O número 1 é ímpar.');
+        $I->see('O número 2 é par.');
+        $I->see('O número 3 é ímpar.');
+        $I->see('O número 4 é par.');
+        $I->see('O número 5 é ímpar.');
+        $I->see('O número 6 é par.');
+        $I->see('O número 7 é ímpar.');
+        $I->see('O número 8 é par.');
+        $I->see('O número 9 é ímpar.');
+        $I->see('O número 10 é par.');
+        $I->see('O número 11 é ímpar.');
+        $I->see('O número 12 é par.');
+        $I->see('O número 13 é ímpar.');
+        $I->see('O número 14 é par.');
+        $I->see('O número 15 é ímpar');
         
     }
 }

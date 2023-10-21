@@ -19,7 +19,24 @@
         }
         ?>
         <input type="submit" value="Enviar" class="submit-button">
-
     </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        $numeros = array();
+
+        for ($i = 1; $i <= 15; $i++) {
+            $numero = $_POST["numero$i"];
+            $numeros[] = $numero;
+        }
+        
+        echo "<h2>Resultado:</h2>";
+        $count = count($numeros);
+        for ($i = 0; $i < $count; $i++) {
+            $mensagem = ($numeros[$i] % 2 == 0) ? "par" : "ímpar";
+            echo "O número " . $numeros[$i] . " é $mensagem.<br>";
+        }
+    }
+    ?>
 </body>
 </html>
