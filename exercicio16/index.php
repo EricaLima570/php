@@ -29,7 +29,6 @@
             $numero = $_POST["numero$i"];
             $numeros[] = $numero;
         }
-        
         echo "<h2>Resultado:</h2>";
         $count = count($numeros);
         for ($i = 0; $i < $count; $i++) {
