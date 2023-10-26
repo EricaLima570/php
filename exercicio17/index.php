@@ -13,6 +13,33 @@
             <label for="numeros">Digite 20 números inteiros separados por vírgula:</label>
             <input type="text" name="numeros" id="numeros">
             <input type="submit" value="Enviar">
-        </form>    
+        </form>  
+        <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["numeros"])) {
+                $numeros = $_POST["numeros"];
+                $numeros = explode(",", $numeros);
+
+                $maior = max($numeros);
+                $menor = min($numeros);
+
+
+                $numerosPares = 0;
+                foreach ($numeros as $valor) {
+                    if ($valor % 2 == 0) {
+                        $numerosPares++;
+                    }
+                }
+                $percentualPares = ($numerosPares / count($numeros)) * 100;
+
+                $soma = array_sum($numeros);
+                $media = $soma / count($numeros);
+
+                echo "<h2>Resultados</h2>";
+                echo "<p>Maior Valor: $maior</p>";
+                echo "<p>Menor Valor: $menor</p>";
+                echo "<p>Percentual de Números Pares: $percentualPares%</p>";
+                echo "<p>Média dos Elementos: $media</p>";
+            }   
+        ?>     
 </body>
 </html>

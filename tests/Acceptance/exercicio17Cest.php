@@ -19,5 +19,10 @@ class exercicio17Cest
         $I->fillField('input#numeros', $numeros);
         $I->click('Enviar');
 
+        $I->see('Maior Valor: 20');
+        $I->see('Menor Valor: 1');
+        $I->see('Percentual de Números Pares: 50%');
+        $I->see('Média dos Elementos: 10.5');  
+
     }
 }
