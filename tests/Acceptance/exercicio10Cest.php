@@ -30,5 +30,6 @@ class exercicio10Cest
         // Verifique os resultados esperados
         $I->see('A soma dos números positivos é: 118');
         $I->see('O total de números negativos é: 8');
+
     }
 }
