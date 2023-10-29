@@ -17,5 +17,10 @@ class exercicio11Cest
         $I->seeElement('form'); 
         $I->seeElement('input[name="numero"]');
         $I->seeElement('input[type="submit"][value="Enviar"]');
+
+        $I->seeElement('table');
+
+        $numero = 7; // Substitua pelo número desejado
+        $resultados = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70];
     }
 }
