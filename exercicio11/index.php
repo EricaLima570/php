@@ -23,6 +23,35 @@
             $resultado = $numero * $i;
             echo "<tr><td>$numero  x   $i</td><td>=</td><td>$resultado</td></tr>";
         }
+
+        // Configuração de conexão com o banco de dados
+        $dbHost = 'database_titans';
+        $dbUser = 'user_erica';
+        $dbPassword = 'ls23072019';
+        $dbName = 'titans';
+
+        // Conectar ao banco de dados
+        $conexao = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
+
+        // Verificar erros na conexão
+        if ($conexao->connect_errno) {
+            echo "Erro:" . $conexao->connect_error;
+        } else {
+            // Inserir os dados na tabela no banco de dados
+            for ($i = 1; $i <= 10; $i++) {
+                $resultado = $numero * $i;
+                $query = "INSERT INTO exercicio11 (numero, tabuada) VALUES ('$numero', '$resultado')";
+
+                if ($conexao->query($query) === TRUE) {
+                    echo "Dados inseridos com sucesso no banco de dados";
+                } else {
+                    echo "Erro ao inserir dados no banco de dados: " . $conexao->error;
+                }
+            }
+
+            // Fechar a conexão com o banco de dados
+            $conexao->close();
+        }
     }
     ?>
 </body>
